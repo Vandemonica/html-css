@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+    }
+
+    .karuta{
+      background-color: brown;
+      color: azure;
+      margin: 4px;
+
+      width: 48%;
+      height: 300px;
+    }
+    .karuta > h4{
+      margin: 0;
+      padding: 10px;
+      border-bottom: 1px solid azure;
+    }
+    .karuta > div{
+      padding: 10px;
+    }
+    
+    .flex{
+      display: flex;
+    }
+
+    .wrap{
+      flex-wrap: wrap;
+    }
+
+    .justify-content{
+      justify-content: center;
+    }
+
+    .align-content{
+      align-content: center;
+    }
+
+    .navbar{
+      font-family: Arial, Helvetica, sans-serif;
+      color: azure;
+      background: rgb(66, 66, 66);
+      height: 80px;      
+      padding: 0 20px;
+
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    .nav-title{
+      font-size: 30px;
+      font-style: italic;
+    }
+    .nav-menu{
+      margin-left: auto;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    .nav-menu > div{
+      margin-left: 18px;
+    }
+
+  </style>  
+</head>
+<body>
+
+  <div class="flex navbar">
+    <div class="nav-title">Navbar</div>
+    <div class="flex nav-menu">
+      <div>Menu 1</div>
+      <div>Menu 2</div>
+      <div>Menu 3</div>
+    </div> 
+  </div>
+
+
+  <div class="flex wrap justify-content" style="margin-top: 40px;">
+    <div class="karuta">        
+      <h4>Lorem Ipsum 1</h4>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sint consectetur, architecto ipsa qui hic ab quaerat molestiae nisi, itaque nostrum facere asperiores cupiditate recusandae quam. Illum expedita eveniet consequuntur.        
+      </div>
+    </div>
+  
+    <div class="karuta">        
+      <h4>Lorem Ipsum 2</h4>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sint consectetur, architecto ipsa qui hic ab quaerat molestiae nisi, itaque nostrum facere asperiores cupiditate recusandae quam. Illum expedita eveniet consequuntur.        
+      </div>
+    </div>
+  
+    <div class="karuta">        
+      <h4>Lorem Ipsum 3</h4>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sint consectetur, architecto ipsa qui hic ab quaerat molestiae nisi, itaque nostrum facere asperiores cupiditate recusandae quam. Illum expedita eveniet consequuntur.        
+      </div>
+    </div>
+
+    <div class="karuta">        
+      <h4>Lorem Ipsum 4</h4>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sint consectetur, architecto ipsa qui hic ab quaerat molestiae nisi, itaque nostrum facere asperiores cupiditate recusandae quam. Illum expedita eveniet consequuntur.        
+      </div>
+    </div>
+
+    <div class="karuta">        
+      <h4>Lorem Ipsum 5</h4>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sint consectetur, architecto ipsa qui hic ab quaerat molestiae nisi, itaque nostrum facere asperiores cupiditate recusandae quam. Illum expedita eveniet consequuntur.        
+      </div>
+    </div>
+
+    <div class="karuta">        
+      <h4>Lorem Ipsum 6</h4>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sint consectetur, architecto ipsa qui hic ab quaerat molestiae nisi, itaque nostrum facere asperiores cupiditate recusandae quam. Illum expedita eveniet consequuntur.        
+      </div>
+    </div>
+
+    <div class="karuta">        
+      <h4>Lorem Ipsum 7</h4>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sint consectetur, architecto ipsa qui hic ab quaerat molestiae nisi, itaque nostrum facere asperiores cupiditate recusandae quam. Illum expedita eveniet consequuntur.        
+      </div>
+    </div>
+
+    <div class="karuta">        
+      <h4>Lorem Ipsum 8</h4>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sint consectetur, architecto ipsa qui hic ab quaerat molestiae nisi, itaque nostrum facere asperiores cupiditate recusandae quam. Illum expedita eveniet consequuntur.        
+      </div>
+    </div>
+  </div>  
+
+
+
+
+
+</body>
+</html>

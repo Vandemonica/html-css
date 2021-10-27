@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .flex{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .box-gambar{
+      display: flex;
+      width: 400px;
+      height: 200px;
+      margin: 12px;
+
+      border: 2px solid gray;
+    }
+    .box-gambar img{
+      width: 120px;
+      height: 100%;
+     
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .box-gambar > div{
+      padding: 12px;
+    }
+
+    .box-gambar > div > div{
+      color: gray;
+    }
+
+    .box-gambar div h5{
+      font-size: 24px;
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="flex">
+    <div class="box-gambar">
+      <img src="image/cat1.jpg">
+      <div>
+        <h5>Begula</h5>
+        <div>Epic Gamer Cat</div>
+      </div>
+    </div>
+
+    <div class="box-gambar">
+      <img src="image/cat2.jpg">
+      <div>
+        <h5>Heather</h5>
+        <div>Kawaii kyot neko :3</div>
+      </div>
+    </div>  
+
+    <div class="box-gambar">
+      <img src="image/cat3.jpg">
+      <div>
+        <h5>Smugley</h5>
+        <div>*Stares mdfk'ley</div>
+      </div>
+    </div>  
+  </div>  
+
+</body>
+</html>
