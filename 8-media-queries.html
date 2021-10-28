@@ -32,28 +32,51 @@
       text-decoration: none;
       font-size: 30px;
       font-style: italic;
-      margin-left: 80px;
+      margin-left: 20px;
     }
     .nav-menu{
       margin-left: auto;
-      margin-right: 80px;
+      margin-right: 20px;
       display: flex;
       flex-wrap: wrap;
       align-content: center;
     }
-    .nav-menu > a{
+    .nav-menu a{
       color: white;
       text-decoration: none;
       margin-left: 18px;
       font-size: 18px;
       transition: color 0.2s;
     }
-    .nav-menu > a:hover{
+    .nav-menu a:hover{
       color: steelblue;
     }
 
+    .menu-mobile{
+      font-size: 30px;
+    }
+    .menu-desktop{
+      display: none;
+    }
 
 
+    @media screen and (min-width: 767px){
+      .nav-title{
+        margin-left: 80px;
+      }
+      .nav-menu{
+        margin-right: 80px;
+      }
+    }
+
+    @media screen and (min-width: 1023px){
+      .menu-desktop{
+        display: block;
+      }
+      .menu-mobile{
+        display: none;
+      }
+    }
 
   </style>
 </head>
@@ -62,20 +85,17 @@
   <div class="navbar">
     <a href="#" class="nav-title">Mep-Learning</a>
     <div class="nav-menu">
-      <a href="#">Learn</a>
-      <a href="#">Class</a>
-      <a href="#">About</a>
+      <div class="menu-mobile">
+        &#8286;
+      </div>
+      <div class="menu-desktop">
+        <a href="#">Learn</a>
+        <a href="#">Class</a>
+        <a href="#">About</a>
+      </div>      
     </div> 
   </div>
-  
-  <div class="container">
-    <div class="sisi-kiri">
-
-    </div>
-    <div class="sisi-kanan">
-
-    </div>
-  </div>  
+ 
 
 </body>
 </html>
