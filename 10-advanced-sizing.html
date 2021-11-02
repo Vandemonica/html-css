@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Sizing</title>
+  <style>
+    body{
+      margin: 0;
+    }  
+
+    nav{
+      font-family: Arial, Helvetica, sans-serif;
+      color: azure;
+      background: rgb(66, 66, 66);
+      height: 80px;      
+
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+
+      position: fixed;
+      top: 0;
+      z-index: 20;      
+      width: 100%;
+    }
+    .nav-title{
+      font-size: 30px;
+      font-style: italic;
+      margin-left: 20px;
+    }
+    .nav-menu{
+      margin-left: auto;
+      margin-right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    .nav-menu > div{
+      margin-left: 18px;
+    }
+
+    footer{
+      background: rgb(48, 48, 48);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 22px;
+    }
+
+
+    .container{
+      padding: 80px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-title">Kocheng</div>
+    <div class="nav-menu">
+      <div>Forum</div>
+      <div>Wiki</div>
+      <div>Search</div>
+    </div> 
+  </nav>
+  
+  
+  <div class="container">
+    <h1>About Mep</h1>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, non quam debitis magnam blanditiis sapiente deleniti officia magni repellendus vero maiores illum ex eveniet delectus dolorem! Itaque eos velit in.
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium vel repudiandae fuga omnis hic beatae excepturi quibusdam perspiciatis dignissimos. Dolor labore consequatur illo corporis rerum sequi, harum aliquid iste?
+    </div>
+  </div>
+
+
+  <footer>
+    <div>Ini adalah footer</div>
+    <div>About</div>
+  </footer>
+</body>
+</html>
